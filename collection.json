@@ -17,6 +17,8 @@
 							"script": {
 								"exec": [
 									"const sports = pm.environment.get(\"sports\");",
+									"console.log(\"Sports from test script\")",
+									"console.log(sports)",
 									"",
 									"if (sports && sports.length > 0){",
 									"    postman.setNextRequest(\"User requests games live on Sky\");",
@@ -74,7 +76,7 @@
 							"script": {
 								"exec": [
 									"console.log(\"ABOUT TO FETCH\")",
-									"let sports = Array.from(pm.environment.get(\"sports\"));",
+									"let sports = pm.environment.get(\"sports\");",
 									"",
 									"console.log(\"SPORTS\")",
 									"console.log(sports)",
