@@ -75,7 +75,6 @@
 								"exec": [
 									"console.log(\"ABOUT TO FETCH\")",
 									"let sports = pm.environment.get(\"sports\");",
-									"// let sports = pm.collectionVariables.get(\"sports\")",
 									"",
 									"console.log(\"SPORTS\")",
 									"console.log(sports)",
