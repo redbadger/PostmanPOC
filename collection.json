@@ -16,16 +16,13 @@
 							"listen": "test",
 							"script": {
 								"exec": [
-									"const sports = pm.collectionVariables.get(\"sports\");",
+									"const sports = pm.environment.get(\"sports\");",
 									"",
 									"if (sports && sports.length > 0){",
 									"    postman.setNextRequest(\"User requests games live on Sky\");",
 									"} else {",
 									"    postman.setNextRequest(\"User views timeline of a specific match\");",
 									"}",
-									"",
-									"",
-									"",
 									"",
 									"const jsonData = pm.response.json();",
 									"",
@@ -77,8 +74,8 @@
 							"script": {
 								"exec": [
 									"console.log(\"ABOUT TO FETCH\")",
-									"",
-									"let sports = pm.collectionVariables.get(\"sports\")",
+									"let sports = pm.environment.get(\"sports\");",
+									"// let sports = pm.collectionVariables.get(\"sports\")",
 									"",
 									"console.log(\"SPORTS\")",
 									"console.log(sports)",
@@ -90,8 +87,8 @@
 									"",
 									"let currentsport = sports.shift();",
 									"console.log(currentsport)",
-									"pm.collectionVariables.set(\"sport\", currentsport);",
-									"pm.collectionVariables.set(\"sports\", sports);"
+									"pm.environment.set(\"sport\", currentsport);",
+									"pm.environment.set(\"sports\", sports);"
 								],
 								"type": "text/javascript"
 							}
