@@ -714,11 +714,11 @@
 	"variable": [
 		{
 			"key": "sport",
-			"value": ""
+			"value": "football"
 		},
 		{
 			"key": "sports",
-			"value": ""
+			"value": "football,tennis,cricket"
 		}
 	]
 }
