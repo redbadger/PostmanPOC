@@ -76,13 +76,15 @@
 							"listen": "prerequest",
 							"script": {
 								"exec": [
+									"console.log(\"ABOUT TO FETCH\")",
+									"",
 									"let sports = pm.collectionVariables.get(\"sports\")",
 									"",
+									"console.log(\"SPORTS\")",
 									"console.log(sports)",
 									"",
 									"",
 									"if(!sports || sports.length == 0) {",
-									"    console.log(\"triggered\")",
 									"    sports = [\"Football\", \"Cricket\", \"Tennis\"];",
 									"}",
 									"",
