@@ -275,14 +275,14 @@
 									"type": "apikey",
 									"apikey": [
 										{
-											"key": "key",
-											"value": "Authorization",
+											"key": "value",
+											"value": "{{dummyAuthToken}}",
 											"type": "string"
 										},
 										{
-											"key": "value",
-											"value": true,
-											"type": "boolean"
+											"key": "key",
+											"value": "Authorization",
+											"type": "string"
 										},
 										{
 											"key": "in",
@@ -494,14 +494,14 @@
 									"type": "apikey",
 									"apikey": [
 										{
-											"key": "key",
-											"value": "Authorization",
+											"key": "value",
+											"value": "{{dummyAuthToken}}",
 											"type": "string"
 										},
 										{
-											"key": "value",
-											"value": true,
-											"type": "boolean"
+											"key": "key",
+											"value": "Authorization",
+											"type": "string"
 										},
 										{
 											"key": "in",
@@ -740,6 +740,26 @@
 						}
 					],
 					"request": {
+						"auth": {
+							"type": "apikey",
+							"apikey": [
+								{
+									"key": "value",
+									"value": "{{dummyAuthToken}}",
+									"type": "string"
+								},
+								{
+									"key": "key",
+									"value": "Authorization",
+									"type": "string"
+								},
+								{
+									"key": "in",
+									"value": "header",
+									"type": "string"
+								}
+							]
+						},
 						"method": "GET",
 						"header": [
 							{
