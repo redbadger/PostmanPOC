@@ -1,6 +1,6 @@
 {
 	"info": {
-		"_postman_id": "8440cbe8-9daf-4253-b36f-119e3f91f40c",
+		"_postman_id": "f27e41b5-1853-4a49-bb9d-48742e6b1c3f",
 		"name": "Cooper POC",
 		"description": "Football resource, surfaces Football content including Live on Sky listings.",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
@@ -103,14 +103,14 @@
 									"type": "apikey",
 									"apikey": [
 										{
-											"key": "key",
-											"value": "Authorization",
+											"key": "value",
+											"value": "{{dummyAuthToken}}",
 											"type": "string"
 										},
 										{
-											"key": "value",
-											"value": true,
-											"type": "boolean"
+											"key": "key",
+											"value": "Authorization",
+											"type": "string"
 										},
 										{
 											"key": "in",
